@@ -1,0 +1,39 @@
+<ion-content [fullscreen]="true" class="login-container">
+  <ion-card class="login-card">
+    
+    <ion-card-content>
+      <ion-img src="../../assets/logo.jpg" class="login-logo rounded-image"></ion-img>
+      <ion-list lines="none">
+        <ion-item>
+          <ion-icon name="mail-outline" slot="start"></ion-icon>
+           <ion-input label="email"  
+            [(ngModel)]="form.email"[ngModelOptions]="{standalone:true}"  
+           label-placement="floating" fill="" type="email"  placeholder="Email" required>
+          </ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="lock-closed-outline" slot="start"></ion-icon>
+          <ion-input  label="password"  
+           [(ngModel)]="form.password"[ngModelOptions]="{standalone:true}"  
+          label-placement="floating" fill=""  type="password" name="password" placeholder="****" required></ion-input>
+        </ion-item>
+
+      </ion-list>
+      <ion-button expand="block" fill="clear" class="forgot-password" slot="end">Forgot Password?</ion-button>
+      <ion-button (click)="onSubmit()" expand="block" color="primary" class="login-button">Login</ion-button>
+
+
+
+      <!-- Fitur Login dengan Media Sosial -->
+      <ion-button expand="block" color="" class="social-login-button">
+        <ion-icon name="logo-facebook"></ion-icon> Login with Facebook
+      </ion-button>
+      <ion-button expand="block" color="" class="social-login-button-google">
+        <ion-icon name="logo-google"></ion-icon> Login with Google
+      </ion-button>
+      <ion-button expand="block" color="dark" class="social-login-button">
+        <ion-icon name="logo-github"></ion-icon> Login with GitHub
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

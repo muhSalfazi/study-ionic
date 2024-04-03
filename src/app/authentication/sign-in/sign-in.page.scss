@@ -1,0 +1,73 @@
+
+ion-input {
+  --margin-top:5px;
+}
+ion-content{
+  --display: flex;
+  --min-height: 100%;
+  --flex-direction: column;
+  --align-items: center;
+  --justify-content: center;
+
+}
+.login-logo {
+  max-width: 100px;
+  margin: auto;
+  
+}
+
+.rounded-image {
+  margin-top: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 100px;
+  height: 100px;
+}
+
+.login-button {
+  margin-top: 20px;
+  font-size: 16px; /* Menambah ukuran font */
+  padding: 12px 24px; /* Menyesuaikan padding tombol */
+}
+
+.forgot-password {
+  text-align: right;
+  font-size: 12px;
+}
+.login-button,
+.social-login-button,
+.forgot-password {
+  margin-top: 20px; /* Jarak antar elemen */
+}
+
+.social-login-button {
+  margin-top: 15px;
+  --background: linear-gradient(to right, #486dbd, #4c70ba);
+  --box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.social-login-button ion-icon {
+  margin-right: 8px; /* Menambah jarak antara ikon dan teks */
+}
+
+.social-login-button:hover {
+  transform: translateY(-3px);
+  --box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.15);
+}
+
+.social-login-button-google {
+  margin-top: 15px;
+  // --border-radius: 10px;
+  --background: linear-gradient(to right, rgb(176, 84, 84), #b32d2d);
+  --box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+.social-login-button-google:hover {
+  transform: translateY(-3px);
+  --box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.15);
+}
+
+.social-login-button-google ion-icon {
+  margin-right: 8px; /* Menambah jarak antara ikon dan teks */
+}
